@@ -97,8 +97,8 @@ X_projected = pca.fit_transform(X)
 x1 = X_projected[:, 0]
 x2 = X_projected[:, 1]
 
-#fig = px.scatter(x=[x1, x2], y=y)
-#fig.show()
+fig = px.scatter(X_projected, x=0, y=1, color=1)
+fig.show()
 
 fig = plt.figure()
 plt.scatter(x1, x2,
